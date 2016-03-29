@@ -31,28 +31,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   // Each state's controller can be found in controllers.js*/
   $stateProvider
 
-  // setup an abstract state for the tabs directive
-    .state('app', {
+  .state('app', {
     url: '/app',
     abstract: true,
     controller: 'AppCtrl',
     templateUrl: 'templates/menu.html'
   })
-
-  // Each tab has its own nav history stack:
-  /*
-  .state('app.tabs', {
-    url: '/tabs',
-      views: {
-      'menuContent': {
-        templateUrl: 'templates/tabs.html'
-
-      }
-    }
-
-  })
-  */
-
   .state('app.cerca', {
     url: '/cerca',
     views: {
@@ -104,17 +88,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
-  /*
-  .state('app.prova', {
-    url: '/tabs/prova',
-      views: {
-        'tab-home': {
-          templateUrl: 'templates/prova.html'
-        }
-      }
-  })*/
   ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/home');
 
-});
+})
+
+.config(['$ionicConfigProvider', function($ionicConfigProvider) {
+
+    $ionicConfigProvider.tabs.position('bottom'); // other values: top
+
+}]);

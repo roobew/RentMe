@@ -16,6 +16,7 @@
         "C:/ionic/rentMe/platforms/ios/www/cordova-js-src/exec.js",
         "C:/ionic/rentMe/platforms/ios/www/cordova-js-src/platform.js",
         "C:/ionic/rentMe/platforms/ios/www/js/app.js",
-        "C:/ionic/rentMe/platforms/ios/cordova/lib/ConsoleLogger.js"
+        "C:/ionic/rentMe/platforms/ios/cordova/lib/ConsoleLogger.js",
+        "C:/ionic/rentMe/www/js/controllers.js"
     ]
 }
