@@ -35,7 +35,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     .state('app', {
     url: '/app',
     abstract: true,
-      controller: 'AppCtrl',
+    controller: 'AppCtrl',
     templateUrl: 'templates/menu.html'
   })
 
@@ -59,6 +59,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       'tab-cerca': {
         templateUrl: 'templates/cerca/tab-cerca.html',
         controller: "CercaCtrl"
+      }
+    }
+  })
+  .state('app.risultati', {
+    url: '/cerca/risultati',
+    views: {
+      'tab-cerca': {
+        templateUrl: 'templates/cerca/risultati.html',
+        controller: "ResultCtrl"
       }
     }
   })
@@ -95,7 +104,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
-
   /*
   .state('app.prova', {
     url: '/tabs/prova',

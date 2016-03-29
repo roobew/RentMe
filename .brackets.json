@@ -1,0 +1,21 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/ionic/rentMe/platforms/ios/cordova/lib/configMunger.js",
+        "C:/ionic/rentMe/platforms/ios/cordova/lib/check_reqs.js",
+        "C:/ionic/rentMe/platforms/ios/cordova/lib/copy-www-build-step.js",
+        "C:/ionic/rentMe/platforms/ios/cordova/lib/prepare.js",
+        "C:/ionic/rentMe/platforms/ios/cordova/lib/projectFile.js",
+        "C:/ionic/rentMe/platforms/ios/cordova/lib/run.js",
+        "C:/ionic/rentMe/platforms/ios/cordova/lib/spawn.js",
+        "C:/ionic/rentMe/platforms/ios/cordova/lib/versions.js",
+        "C:/ionic/rentMe/platforms/ios/cordova/Api.js",
+        "C:/ionic/rentMe/platforms/ios/CordovaLib/cordova.js",
+        "C:/ionic/rentMe/platforms/ios/platform_www/cordova-js-src/exec.js",
+        "C:/ionic/rentMe/platforms/ios/platform_www/cordova-js-src/platform.js",
+        "C:/ionic/rentMe/platforms/ios/platform_www/cordova.js",
+        "C:/ionic/rentMe/platforms/ios/www/cordova-js-src/exec.js",
+        "C:/ionic/rentMe/platforms/ios/www/cordova-js-src/platform.js",
+        "C:/ionic/rentMe/platforms/ios/www/js/app.js",
+        "C:/ionic/rentMe/platforms/ios/cordova/lib/ConsoleLogger.js"
+    ]
+}

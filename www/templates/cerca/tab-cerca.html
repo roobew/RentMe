@@ -1,29 +1,27 @@
 <ion-view view-title="Cerca">
-    <ion-nav-buttons side="right">
-        <button class="button button-icon button-clear ion-map" >
-        </button>
-    </ion-nav-buttons>
   <ion-content>
-      <ion-list>
-        <ion-item menu-close ng-click="openModal('luogo')">
-            Luogo?
-        </ion-item>
-        <ion-item class="item-input item-select">
-            <div class="input-label">
-                Tipo?
-            </div>
-            <select>
-              <option selected>Blue</option>
-              <option >Green</option>
-              <option>Red</option>
-            </select>
-        </ion-item>
-         <ion-item menu-close ng-click="openModal('prezzo')">
-            Prezzo?
-        </ion-item>
-          <ion-item>
-            <button class="button button-block button-positive" ng-click="console.log('cerca')">Cerca</button>
-          </ion-item>
-      </ion-list>
+
+          <ion-list>
+            <ion-item ng-click="openModal('luogo')">
+                Luogo?
+            </ion-item>
+            <ion-item class="item-input item-select">
+                <div class="input-label">
+                    Tipo?
+                </div>
+                <select>
+                  <option selected>Blue</option>
+                  <option >Green</option>
+                  <option>Red</option>
+                </select>
+            </ion-item>
+             <ion-item ng-click="openModal('prezzo')">
+                Prezzo?
+            </ion-item>
+              <ion-item>
+                <a class="button button-block button-positive" href="#/app/cerca/risultati ">Cerca</a>
+              </ion-item>
+          </ion-list>
+
   </ion-content>
 </ion-view>

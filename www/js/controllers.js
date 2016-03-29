@@ -1,9 +1,13 @@
 angular.module('starter.controllers', [])
 
+.controller('AppCtrl', function($scope) {
+    $scope.platform = ionic.Platform.platform();
+})
+
 .controller('CercaCtrl', function($scope, $ionicModal, $timeout) {
 
     $scope.loginData = {};
-    // Create the login modal that we will use later
+    // Create the modal that we will use later
     $ionicModal.fromTemplateUrl('templates/cerca/modalLuogo.html', {
         id: 'luogo',
         scope: $scope
@@ -16,7 +20,7 @@ angular.module('starter.controllers', [])
     }).then(function(modal) {
         $scope.modalPrezzo = modal;
     });
-    // Triggered in the login modal to close it
+    // Triggered in the modal to close it
     $scope.closeModal = function($string) {
         switch($string){
             case 'luogo':
@@ -28,7 +32,7 @@ angular.module('starter.controllers', [])
         }
 
     };
-    // Open the login modal
+    // Open the modal
     $scope.openModal = function($string) {
         switch($string){
             case 'luogo':
@@ -45,7 +49,17 @@ angular.module('starter.controllers', [])
         $scope.closeModal($string);
     };
 })
+.controller('ResultCtrl', function($scope) {
+    $scope.map=false;
+    $scope.switchView = function(){
+        $scope.map = !$scope.map;
+    }
 
+})
+
+;
+
+/*
 .controller('ChatsCtrl', function($scope, Chats) {
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -70,10 +84,4 @@ angular.module('starter.controllers', [])
     enableFriends: true
   };
 })
-.controller('AppCtrl', function($scope) {
-    $scope.platform = ionic.Platform.platform();
-
-})
-
-;
-
+*/
